@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+                <!-- imagem na css -->
+            </div>
+            <div id="texto">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. <br>Faça seu login para acessar sua conta.</p>
+            <form action="login.php" method="post">
+                <div class="campo">
+                    <span class="material-icons">account_circle</span>
+                    <input type="email" name="email" id="xlogin" required autocomplete="email" placeholder="e-mail">
+                    <label for="xlogin">Login</label>
+                </div>
+                <div class="campo">
+                    <span class="material-icons">lock_open</span>
+                    <input type="password" name="senha" id="xsenha" required autocomplete="current-password" minlength="8" maxlength="20" placeholder="senha">
+                    <label for="xsenha">Senha</label>
+                </div>
+                <input type="submit" value="Entrar">
+                <a class="botao" href="recovery.html">Esqueci a senha <span class="material-icons">forward_to_inbox</span></a>
+            </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

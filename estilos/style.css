@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* cores
+    azul: #081578
+          #C1E5F5 
+          #160261
+ */
+          
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #020203;
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+section#login {
+    background-color: white;
+    height: 600px;
+    width: 300px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    transition: witdh .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+div#img {
+    background: #160261 url(../imagens/tela-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    
+}
+
+div#texto h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: 15px;
+    
+}
+
+div#texto p {
+    text-align: center;
+    font-size: .8em;
+    margin-bottom: 20px;
+}
+
+div.campo {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.945);
+    border-radius: 8px;
+    width: 95%;
+    height: 45px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+div.campo input {
+    background-color: #e9ebff;
+    border-radius: 8px;
+    width: calc(100% - 48px);
+    transform: translateY(-10px);
+    padding: 11px;
+    outline: none;
+    
+}
+
+div.campo input:focus-within {
+    background-color: white;
+}
+
+div.campo span {
+    color: white;
+    font-size: 2em;
+    width: 42px;
+    padding: 5px 0px 0px 8px;
+}
+
+form label {
+    display: none;
+}
+
+form > input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.945);
+    color: white;
+    display: block;
+    border-radius: 8px;
+    width: 40%;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    font-weight: bold;
+    background-color: #e9ebff;
+    color: black;
+
+}
+
+form > a.botao {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bold;
+    display: block;
+    color: black;
+    margin-top: 10px;
+}
+
+form >a.botao:hover {
+    color: rgb(68, 66, 66);
+}
+
+form > a.botao > span {
+    font-size: 1.2em;
+    color: black;
+    
+}
